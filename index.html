@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            width: 60%;
+            margin: 50px auto;
+        }
+        .content{
+            background-color: #eee;
+            border: 2px solid #333;
+            padding: 15px;
+            margin-bottom: 40px;
+        }
+        .title{
+            color: crimson;
+            text-align: center;
+        }
+        .parent{
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        header, article, section,footer,nav,aside{
+            padding: 20px 0;
+            font-size: 22px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            background-color: blue;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="title">
+                <h1>One</h1>
+            </div>
+            <div class="parent">
+                <header style="width: 100%;">Header</header>
+                <nav style="width: 25%;">Nav</nav>
+                <section style="width: calc(100% - (25% + 25% + 20px)); margin: 0 10px 10px">
+                    Section
+                    <header style="background-color: orange; margin: 10px">header</header>
+                    <article style="background-color: orange; margin: 10px">article</article>
+                    <footer style="background-color: orange; margin: 10px">footer</footer>
+                </section>
+                <aside style="width: 25%;">Aside</aside>
+                <footer style="width: 100%; ">Footer</footer>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="title">
+                <h1>Two</h1>
+            </div>
+            <div class="parent">
+                <header style="width: 100%;">Header</header>
+                <nav style="width: 100%;">Path</nav>
+                <nav style="width: 100%;">Docktop</nav>
+                <section style="width: 75%; height:200px; margin-right: 10px;">content</section>
+                <aside style="width: calc(100% - (75% + 10px));">dockright</aside>
+                <footer style="width: 100%; ">Footer</footer>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="title">
+                <h1>Three</h1>
+            </div>
+            <div class="parent">
+                <header style="width: 100%;">Header</header>
+                <nav style="width: 100%;">Path</nav>
+                <section style="width: 32.5%; height:200px;">content</section>
+                <section style="width: 32.5%; height:200px; margin: 0 auto">content</section>
+                <section style="width: 32.5%; height:200px;">content</section>
+                <footer style="width: 100%; ">Footer</footer>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <h1>Four</h1>
+            </div>
+            <div class="parent">
+                <header style="width: 100%;">Header</header>
+                <nav style="width: 100%;">Path</nav>
+                <nav style="width: 100%;">Docktop</nav>
+                <section style="width: 100%; height:200px;">content</section>
+                <section style="width: 100%; height:200px;">dockright</section>
+                <footer style="width: 100%; ">Footer</footer>
+            </div>
+        </div>
+        <div class="content">
+            <div class="title">
+                <h1>Five</h1>
+            </div>
+            <div class="parent">
+                <header style="width: 100%;">Header</header>
+                <nav style="width: 100%;">Path</nav>
+                <section style="width: 49.5%; height:200px;">content</section>
+                <section style="width: 49.5%; height:200px; margin: 0 auto">content</section>
+                <section style="width: 49.5%; height:200px;">content</section>
+                <section style="width: 49.5%; height:200px; margin: 0 auto">content</section>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="image">
+        <img src="Screenshot.png">
+    </div> -->
+    
+</body>
+</html>
